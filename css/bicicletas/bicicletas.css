@@ -1,0 +1,114 @@
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--c0) 27%, var(--c11) 0%);
+}
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foto-produto {
+  position: relative;
+  align-items: center;
+}
+.foto-produto > span {
+  position: absolute;
+  background-color: var(--c12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0 0 5px;
+  top: 20px;
+  right: 0px;
+}
+
+.bicicleta-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: var(--p1);
+  margin-bottom: 8px;
+}
+.bicicletas h2 {
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+}
+.bicicletas p {
+  margin-bottom: 32px;
+  max-width: 45ch;
+  grid-column: 1/-1;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
+}
+.bicicletas li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bicicletas li img {
+  width: 24px;
+  height: 24px;
+}
+
+.bicicletas .botao {
+  place-self: end;
+}
+
+/* -----------------------------------------1000 */
+/* @media (max-width: 1000px) {
+  .grid-bicicletas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bicicletas-bg {
+    background: var(--c11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+} */
+
+/* -----------------------------------------800 */
+@media (max-width: 800px) {
+  .grid-bicicletas {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-bg {
+    background: var(--c11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* -----------------------------------------600 */
+@media (max-width: 600px) {
+  .bicicleta-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicicletas .botao {
+    place-self: start;
+  }
+}
