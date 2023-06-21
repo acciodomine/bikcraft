@@ -1,0 +1,46 @@
+.seguro-bg {
+  background: var(--c11);
+  box-shadow: inset 0 120px var(--c0), inset 0 -120px var(--c12);
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.seguro-conteudo {
+  padding: 180px 0;
+}
+
+.seguro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro h2 {
+  padding-bottom: 32px;
+  /* max-width: 12.3ch; */
+}
+.seguro p {
+  padding-bottom: 20px;
+  /* max-width: 45ch; */
+}
+
+/* -----------------------------------------800 */
+@media (max-width: 800px) {
+  .seguro-bg {
+    box-shadow: inset 0 -60px var(--c12);
+  }
+  .seguro {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .seguro-conteudo {
+    grid-row: 1;
+    padding: 60px 0;
+  }
+  .seguro-img img {
+    height: 200px;
+  }
+}

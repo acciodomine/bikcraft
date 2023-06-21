@@ -5,7 +5,7 @@
 .footer {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
-  gap: 40px;
+  gap: 80px 40px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -29,7 +29,7 @@
   margin-top: 16px;
 }
 
-.footer li {
+.footer-contato li {
   margin-bottom: 16px;
 }
 
@@ -47,10 +47,14 @@
   font-weight: 500;
 }
 
+.footer-informacoes li + li {
+  margin-top: 16px;
+}
+
 .direitos {
   grid-column: 1 / -1;
   font-weight: 400;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /* -----------------------------------------800 */
@@ -58,8 +62,8 @@
   .footer {
     grid-template-columns: 1fr 1fr;
   }
-  .footer > img {
-    display: none;
+  .footer > a {
+    grid-column: 1/-1;
   }
 }
 
