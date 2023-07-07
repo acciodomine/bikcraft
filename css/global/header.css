@@ -32,11 +32,12 @@
   width: 0px;
   background: var(--c0);
   margin-top: 4px;
-  transition: 0.3s;
+  transition: 0.2s;
   position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
